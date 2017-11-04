@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<title>Vistara</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" href="css/libs/animate.css">
+
+<link rel="shortcut icon" href="background/icon2.png" >
+ 
+<script src="js/modernizr.custom.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('background/background.jpg');
+    min-height: 100%;
+    opacity: 1.0;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40px;
+  height: 60px;
+  margin-left: -15px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #000000;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #000000;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  display: block;
+  opacity: .5;
+
+}
+.demo-text{
+display: none;
+}
+
+.demo :hover  .demo-text{
+  display: block; 
+}
+
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.w3-myfont {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+input[type=text] {
+    width: 68%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    border : none;
+    border-bottom: 2px solid black;
+}
+
+textarea {
+    width: 60%;
+    height: 160px;
+    padding: 12px 20px;
+    border-:none; 
+    border-bottom: : 2px solid black;
+    font-size: 16px;
+    resize: none;
+}
+
+
+</style>
+<body>
+<!-- _______________________________________________________________________________________________________________________________________________________________-->
+<!--                                                              scroll mouse                                                                                 -->
+<!-- _______________________________________________________________________________________________________________________________________________________________-->
+
+
+   <section id="section10" class="w3-hide-medium w3-hide-small demo" style="margin-left:90% ;position: fixed ; margin-top: 45%;cursor: pointer">
+       <a ><span></span>
+           <li class="demo-text w3-myfont w3-animate-bottom" style="width: 100px;margin-top: 25%;margin-left: 90%;position: fixed">Scroll down</li> 
+       </a>
+   </section>
+
+<!-- _______________________________________________________________________________________________________________________________________________________________-->
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="" style="white-space:nowrap;">
+    <div class="w3-hide-small  w3-display-right  w3-white" style="margin-right: 5%; ">
+       <span class="w3-center w3-text-black w3-xlarge w3-wide w3-animate-opacity" style="margin-right: 0%;padding-top:2%;padding-bottom:2% ;padding-right:2% ;
+        padding-left: 2%;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;">
+            WELCOME TO <br> 
+                <span style="padding-left: 2%"> 
+                       THE REVOLUTION
+                </span>
+        </span>
+    </div>
+
+    <div class="w3-hide-medium w3-hide-large w3-display-bottomright  w3-white" style="margin-right: 5%; margin-bottom: 5%">
+       <span class="w3-center w3-text-black w3-large w3-wide w3-animate-opacity" style=";padding-top:2%;padding-bottom:2% ;padding-right:2% ;
+        padding-left: 2%;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;">
+            WELCOME TO <br> 
+                <span style="padding-left: 2%"> 
+                       THE REVOLUTION
+                </span>
+        </span>
+    </div>
+  </div>
+
+  <div class="w3-hide-small w3-hide-medium" style="margin-left: 65%; padding-top: 29%;padding-right: 2%">
+     <span class="w3-text-white w3-large w3-animate-opacity" style="margin-top:10%;font-family: Papyrus, fantasy;margin-top: 50%; word-spacing: 5px">Introducing The Modern Magzine With New Look and Feel.</span>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+<div class="w3-hide-small " style="word-spacing: 4px; background-color: #12151A">
+ 
+      <img src="background\icon.png" style="margin-top: 10% ; margin-left: 42% ;width: 10% ;">
+
+      <p class="w3-wide w3-xxlarge w3-text-light-grey" style="margin-left: 30%; margin-top: 4%;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;">
+              Welcome To 
+                  <span class="w3-text-blue">
+                             Vistara
+                  </span>
+      </p>
+ 
+       <p class="w3-large w3-text-light-grey " style="margin-top: 2%; margin-left: 20%;margin-right:20% ">
+               Vistara is a digital magazine which will incorporate the latest trending technical ideologies around us, the information of the upcoming events , the reports of the conducted events.
+        </p>
+ 
+
+       <p class="w3-large w3-text-light-grey" style="margin-top: 1%; margin-left: 20%;margin-right:20% ;"> 
+               The platform where ABESians can showcase their talent and skills .
+        </p>
+      
+       <img src="background\googleplay.png" style=" margin-left: 40%;margin-top: 3% ;width: 12%;padding-bottom: 5%;"> 
+
+</div>
+
+<!--Small Screen-->
+<div class="w3-hide-medium w3-hide-large " style="word-spacing: 3px; ">
+ 
+       <img src="background\icon1.png" style="margin-top: 15% ; margin-left: 23% ;width: 40% ;">
+            <p class="w3-wide w3-xlarge w3-text-black" style="margin-left: 20%; margin-top: 4%;font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;">
+                      Welcome To 
+                          <span class="w3-text-blue">
+                                      Vistara
+                          </span>
+            </p>
+
+      <p class="w3-medium w3-text-black" style="margin-top: 2%; margin-left: 15%;margin-right:20% ">
+           Vistara is a digital magazine which will incorporate the latest trending technical ideologies around us, the information of the upcoming events , the reports of the conducted events.
+      </p>
+ 
+      <p class="w3-medium w3-text-black" style="margin-top: 1%; margin-left: 15%;margin-right:20% ;">
+           The platform where ABESians can showcase their talent and skills .
+      </p>
+  
+     <img src="background\googleplay.png" style=" margin-left: 32% ;width: 30%;padding-bottom: 5%;"> 
+</div>
+
+<!-- __________________________________________________________clean design _______________________________________________________________________________-->
+<!-- __________________________________________________________small screen________________________________________________________________________________-->
+
+<section class="w3-hide-large w3-dark-grey w3-hide-medium" id="set-5" style="background-color:">
+<div class="w3-row" >
+   <p class="w3-center w3-xxlarge w3-padding-top w3-text-black w3-myfont" > CLEAN DESIGN</p>
+
+    <div class="w3-col m4 w3-center ">
+      <img src="background\clean design.png" style="width: 120%;margin-left:-10%">
+    </div>
+    
+    <div class="w3-col   m8 hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" >
+         <div class="w3-row">
+            <div class="w3-col m3">
+              <i href="#set-5" class="hi-icon hi-icon-mobile">Mobile</i>
+            </div>
+            <div class="w3-panel w3-col m6 w3-medium" >
+               <p>
+                  News Feed has been completely redesigned to bring together news, popular Stories.
+               </p>
+           </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col m3">
+              <i href="#set-5" class="hi-icon hi-icon-list">Mobile</i>
+            </div>
+            <div class="w3-panel w3-col m6 w3-medium" >
+               <p>
+                  There’s a magazine for everyone—from technology to travel, photography to productivity.
+               </p>
+           </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col m3">
+              <i href="#set-5" class="hi-icon hi-icon-videos">Mobile</i>
+            </div>
+            <div class="w3-panel w3-col m6 w3-medium" >
+               <p>
+                  Help you learn the subjects , and even skills you need to achieve your full potential.
+               </p>
+           </div>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-col m3">
+              <i href="#set-5" class="hi-icon hi-icon-list">Mobile</i>
+            </div>
+            <div class="w3-panel w3-col m6 w3-medium" >
+               <p>
+                  Updates you with useful information around you and on topics you care about.
+               </p>
+           </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- __________________________________________________________clean design _______________________________________________________________________________-->
+<!-- __________________________________________________________large screen________________________________________________________________________________-->
+<section class="w3-hide-small " id="set-5" style="margin-top: 5%">
+<div class="w3-row" >
+   <p class="w3-center w3-wide w3-xlarge w3-padding-top w3-text-black w3-border-bottom w3-padding-large w3-margin-right w3-margin-left w3-myfont" > CLEAN DESIGN</p>
+
+    <div class="w3-col m4  w3-center ">
+      <img src="background\clean design.png" class="wow slideInLeft" data-wow-offset="300" style="width: 100%;margin-top:10%">
+    </div>
+    
+    <div class="w3-col  m2 hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"  style="margin-top: -2%;padding-right: %">
+              <i href="#set-5" class="wow pulse hi-icon hi-icon-mobile" data-wow-iteration="infinite" data-wow-duration="2000ms">Mobile</i><br>
+              <i href="#set-5" class="wow pulse hi-icon hi-icon-list" data-wow-iteration="infinite" data-wow-duration="2000ms">Mobile</i><br>
+              <i href="#set-5" class="wow pulse hi-icon hi-icon-videos" data-wow-iteration="infinite" data-wow-duration="2000ms">Mobile</i><br>
+              <i href="#set-5" class="wow pulse hi-icon hi-icon-list" data-wow-iteration="infinite" data-wow-duration="2000ms">Mobile</i>
+    </div>
+    
+    <div class="w3-col m6 w3-large" style="margin-left:-2%">
+       <div class="w3-panel ">
+          <p>
+             News Feed has been completely redesigned to bring together news, popular Stories.
+          </p>
+       </div>
+
+       <div class="w3-panel ">
+          <p>
+            There’s a magazine for everyone—from technology to travel, photography to productivity.
+          </p>
+       </div>
+
+       <div class="w3-panel ">
+          <p>
+          <br>
+             Help you learn the subjects , and even skills you need to achieve your full potential.
+          </p>
+       </div>
+
+       <div class="w3-panel ">
+          <p>
+            <br>
+            <br>
+            Updates you with useful information around you and on topics you care about.
+          </p>
+       </div>      
+    </div>
+
+</div>
+</section>
+
+
+<!-- _______________________________________________________get the app________________________________________________________________________________________-->
+<!-- ________________________________________________________________________________________________________________________________________________________-->
+
+<!-- get the app-->
+<div class="w3-hide-large w3-hide-medium w3-center" style="margin-top: %; padding-top: 7%;padding-bottom: 7%;background-color: #101010 ">
+   <p class="w3-wide w3-text-light-grey">GET THE <span class="w3-text-blue"> VISTARA </span> APP RIGHT NOW.</p><br><br>
+   <a href="www.google.com" class="w3-large w3-hover-light-grey w3-white w3-text-black w3-padding-large" style="text-decoration: none;margin-top: 0px;"> DOWNLOAD  </a>
+</div>
+
+<div class="w3-hide-small w3-center" style="margin-top:5%; padding-top: 7%;padding-bottom: 7%;background-color: #101010 ">
+   <p class="w3-wide w3-text-light-grey">GET THE <span class="w3-text-blue"> VISTARA </span> APP RIGHT NOW.</p><br><br>
+   <a href="www.google.com" class="w3-large w3-hover-light-grey w3-white w3-text-black w3-padding-large wow fadeInDown" data-wow-offset="300" style="text-decoration: none;margin-top: 0px;"> DOWNLOAD  </a>
+</div>
+
+<!-- _______________________________________________________preview________________________________________________________________________________________-->
+<!-- ________________________________________________________________________________________________________________________________________________________-->
+
+<div class="w3-hide-small" style="margin-top: 10%">
+  <div style="margin-left: 50px;margin-right: 50px;"><p class="w3-center w3-large w3-wide w3-border-bottom">PREVIEW</p></div>
+  <br>
+    <div class="w3-row" style="padding-top: 4% ;width:100%">
+    <div class="w3-col s3">
+      <img src="screenshots\1.jpg" class=" w3-border wow slideInLeft" data-wow-offset="300" style="width: 70%; margin-left: 60px;">
+    </div>
+    <div class="w3-col s3">
+      <img src="screenshots\2.jpg" class=" w3-border wow slideInLeft" data-wow-offset="300" style="width: 70%;margin-left: 20px;">
+    </div>
+    <div class="w3-col s3">
+      <img src="screenshots\3.png" class=" w3-border wow slideInLeft" data-wow-offset="300" style="width: 70%;margin-left: 20px;">
+    </div>
+    <div class="w3-col s3">
+      <img src="screenshots\4.png" class=" w3-border wow slideInLeft" data-wow-offset="300" style="width: 70%; margin-right: 80px;">
+    </div>
+  </div>
+
+</div>
+
+<!-- _______________________________________________________contact________________________________________________________________________________________-->
+<!-- ________________________________________________________________________________________________________________________________________________________-->
+
+<div class="w3-white">
+      <p>.</p>
+      <p class="w3-center w3-text-black w3-xlarge" style=" word-spacing: 4px;margin-top: 4%">CONTACT US</p>
+      <p class="w3-center w3-text-grey w3-wide">WE LOVE TO HEAR YOU</p>
+  <br>
+  <br>
+       <div class="w3-row " style="margin-left: 20% ; padding-bottom: 15%">
+          <form name="contactform" method="post" action="send_form_email.php">
+           <div class="w3-col m6 ">
+                   <input type="text" name="first_name" id="fname" required="required" placeholder="Enter Your Name">
+                   <br>
+                      <span ><b>
+                              NAME</b>
+                       </span>
+                    <br><br>
+                    <input type="text" for="email" id="lname" name="email" placeholder="Enter Your Email">
+                    <br>
+                       <span><b>
+                              EMAIL</b>
+                      </span>
+            </div>
+            <div class="w3-col m6" style="margin-left: -10%">
+                 <textarea placeholder="Your Message" name="comments"></textarea>
+            </div> 
+             
+             <input type="submit" class="w3-center  w3-black w3-text-white w3-border w3-border-white w3-margin-top w3-medium w3-padding-large" value="Send Message ">  
+        </form>        
+         </div>
+    </div>
+
+<!-- _______________________________________________________contact________________________________________________________________________________________-->
+<!-- ________________________________________________________________________________________________________________________________________________________-->
+
+<footer class="w3-center w3-padding-64 " style="background-color: #2D2D2D">
+     <a href="#home" class="w3-button">
+            <i class="fa fa-arrow-up w3-margin-right"></i>
+            To the top
+     </a>
+     <p style="word-spacing: 4px">Designed by : <span class="w3-wide">Harshit Pandey </span></p>
+     <p onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer; margin-top: 2%"><span class="w3-white w3-padding-large"> harshitpandey678@gmail.com </span></p>
+
+</footer>
+<div id="id01" class="w3-modal w3-hide-small">
+    <div class="w3-row w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:800px">
+
+      <div class="w3-col l5 w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright close" title="Close Modal">&times;</span>
+        <img src="background/developer.png" alt="developer_contact" style="width:50%" class=" w3-margin-top">
+        <p class="w3-myfont">For Feedbacks and,</p>
+        <p class="w3-myfont">Any Website Related Issues</p>
+        <p class="w3-wide w3-text-black" style="margin-top: 5%"><b>Please Inbox Me!.</b></p>
+      </div>
+
+      <div class="w3-col l6" style="padding-bottom: 5%; padding-top: 5%">
+         <form name="contactform" method="post" action="send_form_email1.php">
+           <div >
+                   <input type="text" name="first_name" id="fname" required="required" placeholder="Your Name">
+                   <br>
+                    <br><br><input type="text" for="email" id="lname" name="email" placeholder="Your Email">
+                   <br>
+                   <textarea placeholder="Your Feedback" name="comments" style="margin-top: 8%;"></textarea>
+            </div>
+        <input type="submit" class="w3-center  w3-black w3-text-white w3-border w3-border-white w3-margin-top w3-medium w3-padding-medium"  value="Send Message ">  
+        </form> 
+      </div>
+      
+    </div>
+  </div>
+
+
+<script src="dist/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<script>
+ 
+      $('.demo').on('click', function(e) {
+        $('html, body').animate(
+        {
+         scrollTop: $(window).scrollTop() + 500
+        }, 800);
+      });
+
+
+</script>
+
+
+</body>
+</html>
